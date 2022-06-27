@@ -8,7 +8,6 @@ namespace ArrayTask4
         {
             bool isRun = true;
             string userInput;
-            int sum = 0;
             int[] array = new int[0];
 
             Console.WriteLine("Вводите числа, sum - сумма всех введенных элементов, exit - выход из программы");
@@ -20,6 +19,8 @@ namespace ArrayTask4
                 switch (userInput)
                 {
                     case "sum":
+                        int sum = 0;
+
                         for (int i = 0; i < array.Length; i++)
                         {
                             sum += array[i];
